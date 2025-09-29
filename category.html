@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="categoryTitle">Category - SavorGrid</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-container">
+                <div class="logo">
+                    <h1><a href="index.html">SavorGrid</a></h1>
+                </div>
+                <div class="nav-menu">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <div class="dropdown">
+                        <a href="#" class="nav-link dropdown-toggle active">Categories</a>
+                        <div class="dropdown-menu">
+                            <a href="category.html?cat=fashion" class="dropdown-link">Fashion & Accessories</a>
+                            <a href="category.html?cat=health" class="dropdown-link">Health & Beauty</a>
+                            <a href="category.html?cat=home" class="dropdown-link">Home & Garden</a>
+                            <a href="category.html?cat=travel" class="dropdown-link">Travel & Accommodation</a>
+                            <a href="category.html?cat=finance" class="dropdown-link">Finance & Insurance</a>
+                            <a href="category.html?cat=food" class="dropdown-link">Food & Beverage</a>
+                        </div>
+                    </div>
+                    <a href="about.html" class="nav-link">About</a>
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </div>
+                <div class="search-container">
+                    <input type="text" id="searchInput" placeholder="Search articles..." class="search-input">
+                    <button class="search-btn"><i class="fas fa-search"></i></button>
+                </div>
+                <div class="mobile-menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Category Header -->
+    <section class="category-hero">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="index.html">Home</a>
+                <span>/</span>
+                <span>Categories</span>
+                <span>/</span>
+                <span id="currentCategory">Category</span>
+            </div>
+            <div class="category-header">
+                <div class="category-icon-large" id="categoryIcon">
+                    <i class="fas fa-star"></i>
+                </div>
+                <h1 id="categoryName">Category Name</h1>
+                <p id="categoryDescription">Category description will appear here</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Category Articles -->
+    <section class="category-content">
+        <div class="container">
+            <div class="category-filters">
+                <div class="filter-group">
+                    <label for="sortBy">Sort by:</label>
+                    <select id="sortBy" class="filter-select">
+                        <option value="date">Latest</option>
+                        <option value="title">Title</option>
+                        <option value="popular">Most Popular</option>
+                    </select>
+                </div>
+                <div class="articles-count">
+                    <span id="articlesCount">0 articles found</span>
+                </div>
+            </div>
+
+            <div class="articles-grid" id="categoryArticles">
+                <!-- Articles will be loaded here -->
+            </div>
+
+            <div class="pagination" id="pagination">
+                <!-- Pagination will be generated here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>SavorGrid</h3>
+                    <p>Your comprehensive guide to life's best experiences across fashion, health, home, travel, finance, and food.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Categories</h4>
+                    <ul>
+                        <li><a href="category.html?cat=fashion">Fashion & Accessories</a></li>
+                        <li><a href="category.html?cat=health">Health & Beauty</a></li>
+                        <li><a href="category.html?cat=home">Home & Garden</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/savorgrid" class="social-link" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook"></i></a>
+                        <a href="https://twitter.com/savorgrid" class="social-link" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/savorgrid" class="social-link" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.pinterest.com/savorgrid" class="social-link" target="_blank" rel="noopener noreferrer"><i class="fab fa-pinterest"></i></a>
+                        <a href="https://www.youtube.com/c/savorgrid" class="social-link" target="_blank" rel="noopener noreferrer"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 SavorGrid. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/category.js"></script>
+</body>
+</html>
