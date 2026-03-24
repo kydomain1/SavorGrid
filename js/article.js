@@ -2,15 +2,16 @@
 document.addEventListener('DOMContentLoaded', function() {
     const urlParams = new URLSearchParams(window.location.search);
     const articleId = parseInt(urlParams.get('id'));
+    const articleSlug = (urlParams.get('slug') || '').trim().toLowerCase();
     
-    if (articleId && window.SavorGrid) {
-        loadArticleContent(articleId);
-    } else if (articleId) {
+    if ((articleId || articleSlug) && window.SavorGrid) {
+        loadArticleContent({ articleId, articleSlug });
+    } else if (articleId || articleSlug) {
         // Wait for SavorGrid to be available
         const checkSavorGrid = setInterval(() => {
             if (window.SavorGrid && window.SavorGrid.articlesData) {
                 clearInterval(checkSavorGrid);
-                loadArticleContent(articleId);
+                loadArticleContent({ articleId, articleSlug });
             }
         }, 100);
         
@@ -26,9 +27,14 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
-function loadArticleContent(articleId) {
-    const { articlesData } = window.SavorGrid;
-    const article = articlesData.find(a => a.id === articleId);
+function loadArticleContent({ articleId, articleSlug }) {
+    const { articlesData, getArticleSlug } = window.SavorGrid;
+    const article = articlesData.find(a => {
+        if (articleSlug) {
+            return getArticleSlug(a).toLowerCase() === articleSlug;
+        }
+        return a.id === articleId;
+    });
     
     if (!article) {
         showArticleNotFound();
@@ -1150,9 +1156,12 @@ function createRelatedArticleCard(article) {
             day: 'numeric' 
         });
     };
+    const articleSlug = window.SavorGrid?.getArticleSlug
+        ? window.SavorGrid.getArticleSlug(article)
+        : String(article.title || '').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
     
     return `
-        <a href="article.html?id=${article.id}" class="article-card fade-in">
+        <a href="article.html?slug=${encodeURIComponent(articleSlug)}" class="article-card fade-in">
             <img src="${article.image}" alt="${article.title}" class="article-image" 
                  onerror="this.src='https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=800&h=600&fit=crop&crop=center'">
             <div class="article-content">

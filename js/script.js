@@ -132,9 +132,23 @@ function formatDate(dateString) {
     });
 }
 
+function slugifyArticleTitle(title) {
+    return String(title || '')
+        .toLowerCase()
+        .normalize('NFD')
+        .replace(/[\u0300-\u036f]/g, '')
+        .replace(/[^a-z0-9]+/g, '-')
+        .replace(/^-+|-+$/g, '');
+}
+
+function getArticleSlug(article) {
+    return article.slug || slugifyArticleTitle(article.title);
+}
+
 function createArticleCard(article) {
+    const articleSlug = getArticleSlug(article);
     return `
-        <a href="article.html?id=${article.id}" class="article-card fade-in">
+        <a href="article.html?slug=${encodeURIComponent(articleSlug)}" class="article-card fade-in">
             <img src="${article.image}" alt="${article.title}" class="article-image" onerror="this.src='https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=800&h=600&fit=crop&crop=center'">
             <div class="article-content">
                 <div class="article-meta">
@@ -373,5 +387,7 @@ window.SavorGrid = {
     categoryConfig,
     formatDate,
     createArticleCard,
-    createPagination
+    createPagination,
+    slugifyArticleTitle,
+    getArticleSlug
 };
