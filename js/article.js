@@ -998,6 +998,79 @@ function getFullArticleContent(article) {
         }
     };
 
+    contentMap[7] = {
+            content: `
+                <h2>That Morning When Everything Changed</h2>
+                <p>I remember the exact morning it happened. I was standing in my kitchen, half awake, staring at a bag of supermarket coffee I'd been buying on autopilot for years. The brew tasted flat, vaguely bitter, and left a film on my tongue. I thought: there has to be something better than this.</p>
+
+                <p>That idle thought sent me down a rabbit hole — not just about better-tasting beans, but about where coffee actually comes from, how it's grown, what chemicals touch it before it reaches my cup, and whether the farmers who grow it can even afford to drink it themselves. What I found changed my mornings for good.</p>
+
+                <img src="images/heirloom-banner.png" alt="Welcome to regenerative coffee display wall with Heirloom Coffee Roasters branding and colorful coffee cherries" style="width:100%;max-height:400px;object-fit:cover;border-radius:12px;margin:0 0 24px 0" loading="lazy" />
+
+                <h2>The Problem with Most Coffee</h2>
+                <p>Here's something most people don't think about: conventional coffee farming is rough on the land. Monocrop fields strip the soil of nutrients, pesticides accumulate in the ground and the beans, and farmers often earn barely enough to survive. The coffee industry's supply chain is, frankly, a mess — and the end product reflects that. Stale, over-roasted beans mask what's really going on.</p>
+
+                <p>I spent a weekend reading about mycotoxins in coffee, glyphosate residues, and how mass-production roasting prioritizes shelf life over flavor. It was enough to make me reconsider what I'd been putting in my body every single day.</p>
+
+                <h2>Stumbling onto Regenerative Organic Coffee</h2>
+                <p>A friend who works in the food industry mentioned regenerative farming to me over lunch. She was talking about produce, not coffee, but the concept stuck: farming that doesn't just avoid harm, but actively heals the soil, supports biodiversity, and fights climate change. I wondered — does anyone do this with coffee?</p>
+
+                <p>Turns out, yes. I came across <a href="https://heirloomcoffeeroasters.com/">Heirloom Coffee Roasters</a> while browsing a specialty food forum. They're a roaster that uses 100% Regenerative Organic Certified beans — which is apparently the gold standard for sustainable agriculture. Not just organic, not just fair trade, but a certification that covers soil health, animal welfare, and farmer fairness all at once.</p>
+
+                <img src="images/heirloom-roasting.png" alt="Freshly roasted coffee beans pouring from a roasting machine into a cooling tray at Heirloom Coffee Roasters" style="max-width:100%;border-radius:8px;margin:16px 0" loading="lazy" />
+
+                <h2>The First Bag</h2>
+                <p>I ordered two bags to start: the <a href="https://heirloomcoffeeroasters.com/">Pacayal Honey Lot</a> (a light roast from Honduras) and the <a href="https://heirloomcoffeeroasters.com/">Goldenrod Blend</a> (a medium roast). The packaging itself caught my eye — bold, colorful, with clear tasting notes printed on the front. No vague "smooth and rich" nonsense. The Pacayal promised juicy plum, honey, and orange blossom. The Goldenrod said milk chocolate, burnt caramel, smooth.</p>
+
+                <p>I ground the Pacayal first, brewed it in my ceramic pour-over, and took a sip. I'm not exaggerating — it tasted like a completely different beverage from what I'd been drinking. Bright, sweet, with this honey-like finish that lingered. No bitterness. No acid burn. Just clean, layered flavor.</p>
+
+                <img src="images/heirloom-bags.png" alt="Two bags of Heirloom Coffee Roasters specialty coffee, Pacayal Honey Lot and Goldenrod Blend, in a woven basket" style="max-width:100%;border-radius:8px;margin:16px 0" loading="lazy" />
+
+                <h2>What Makes It Taste So Different</h2>
+                <p>I did some digging into why <a href="https://heirloomcoffeeroasters.com/">Heirloom</a>'s coffee tastes the way it does, and the answer goes deeper than bean quality — though that matters too. They've developed what they call the <a href="https://heirloomcoffeeroasters.com/">Culinary Roast</a>, a proprietary roasting style that focuses on bringing out sweetness, depth, and caramelization rather than just darkening the bean.</p>
+
+                <p>Their co-founder, Hovik Azadkhanian, is a third-generation coffee roaster. That kind of generational knowledge shows. The roasting is done at their own facility with what they describe as "sensory science meets culinary art." After roasting, beans are packed within minutes to lock in freshness — a detail that most large-scale roasters skip entirely.</p>
+
+                <p>Then there's the sourcing. Because they work directly with <a href="https://heirloomcoffeeroasters.com/">regenerative organic farms</a>, the beans themselves start from a healthier place. Healthy soil produces more complex flavors in the cherry, which carries through to the cup. It's the same logic that makes heirloom tomatoes taste better than conventional ones.</p>
+
+                <h2>Living With It Day to Day</h2>
+                <p>It's been about three months since I made the switch, and here's what's changed:</p>
+
+                <p>My morning routine feels intentional now. Grinding the beans, heating the water, watching the bloom — it's become a five-minute ritual I actually look forward to. The coffee itself is just better. I've tried four of their varieties so far, and each one has a distinct personality. The <a href="https://heirloomcoffeeroasters.com/">Sugar Phoenix</a> was particularly memorable — sweet, nutty, with a lingering finish that made me keep sipping long after it cooled.</p>
+
+                <p>I also feel better physically. I used to get jittery after a second cup, followed by a crash around 2 PM. That doesn't happen anymore. I can't say for certain it's the pesticide-free aspect, but drinking <a href="https://heirloomcoffeeroasters.com/">clean coffee</a> with no chemical residues seems like a reasonable explanation.</p>
+
+                <img src="images/heirloom-cup.png" alt="Heirloom Coffee Roasters branded takeaway cup with colorful design on a yellow background with dried flowers" style="max-width:100%;border-radius:8px;margin:16px 0" loading="lazy" />
+
+                <h2>The Bigger Picture</h2>
+                <p>What keeps me coming back isn't just the taste — it's knowing what's behind it. <a href="https://heirloomcoffeeroasters.com/">Regenerative organic farming</a> is genuinely important. Coffee farming employs roughly 125 million people worldwide, and the industry is facing an existential threat from climate change and soil degradation. Brands that invest in regenerative practices are actively working to ensure coffee can exist for future generations.</p>
+
+                <p><a href="https://heirloomcoffeeroasters.com/">Heirloom Coffee Roasters</a> has made this their entire mission. They're not a company that slapped an eco-label on existing products — the regenerative approach is baked into everything they do, from farming partnerships to innovative packaging to reduced natural gas in their roasting process.</p>
+
+                <p>Their customer reviews tell the same story I'm telling you. Over 890 reviews, and the recurring theme is surprise — people didn't expect coffee could taste this good. One reviewer said they "refuse to drink anything else." Another described the flavor as "sticking to your tongue" in the best possible way.</p>
+
+                <h2>A Few Practical Notes</h2>
+                <p>If you're thinking about trying <a href="https://heirloomcoffeeroasters.com/">regenerative coffee</a>, here's what I'd suggest:</p>
+
+                <ul>
+                    <li><strong>Start with a blend.</strong> The <a href="https://heirloomcoffeeroasters.com/">Goldenrod Blend</a> is approachable and crowd-pleasing — milk chocolate and caramel notes work for almost everyone.</li>
+                    <li><strong>If you like lighter roasts,</strong> the <a href="https://heirloomcoffeeroasters.com/">Pacayal Honey Lot</a> is exceptional. It's bright without being sour, sweet without sugar.</li>
+                    <li><strong>Use a pour-over or French press</strong> to get the most out of the flavor profile. Drip machines work fine, but manual brewing lets you taste the nuances.</li>
+                    <li><strong>They have a decaf option</strong> — the <a href="https://heirloomcoffeeroasters.com/">Afterglow Decaf</a> — which reviewers say actually tastes like real coffee, not the usual decaf disappointment.</li>
+                    <li><strong>Check out their bundles</strong> if you want to try multiple varieties. It's a good way to figure out your preference.</li>
+                </ul>
+
+                <img src="images/heirloom-latte.png" alt="Beautifully crafted latte with art in an Heirloom Coffee Roasters branded cup and saucer" style="max-width:100%;border-radius:8px;margin:16px 0" loading="lazy" />
+
+                <h2>Worth the Switch?</h2>
+                <p>Honestly, yes. I spend a bit more per bag than I used to, but I also waste less — I actually finish every cup now instead of dumping half of it down the sink. The taste alone justifies it, but the fact that each cup supports <a href="https://heirloomcoffeeroasters.com/">healthier soil, better-paid farmers, and chemical-free cultivation</a> makes it feel like money well spent.</p>
+
+                <p>Coffee is one of those daily habits most of us never question. We grab whatever's on sale, brew it on autopilot, and move on with our day. But the gap between mediocre coffee and genuinely good coffee is enormous — and once you've tasted the difference, going back feels impossible.</p>
+
+                <p>If you've been thinking about upgrading your morning cup, give <a href="https://heirloomcoffeeroasters.com/">Heirloom Coffee Roasters</a> a try. Not because I'm telling you to, but because your taste buds deserve better than what's currently in your cabinet.</p>
+            `
+        };
+
     // Return content or default content
     return contentMap[article.id]?.content || `
         <h2>Article Content</h2>
