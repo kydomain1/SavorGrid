@@ -3,6 +3,18 @@
 // Sample articles data
 const articlesData = [
     {
+        id: 7,
+        title: "Why I Switched to Regenerative Coffee and Never Looked Back",
+        excerpt: "A personal journey into the world of regenerative organic coffee — how one small change in my morning routine reshaped the way I think about what I drink.",
+        category: "food",
+        categoryName: "Food & Beverage",
+        date: "2026-03-24",
+        image: "images/heirloom-banner.png",
+        author: "Claire Whitfield",
+        readTime: "9 min read",
+        featured: true
+    },
+    {
         id: 1,
         title: "The Ultimate Guide to Minimalist Fashion in 2025",
         excerpt: "Discover how to build a timeless wardrobe with fewer, better pieces that reflect your personal style and values.",
